@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 93200,
+  "duration": 88000,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,14 +47,14 @@ formatter.match({
   "location": "loginSteps.launchBrowser()"
 });
 formatter.result({
-  "duration": 8658515800,
+  "duration": 9531401600,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.nav_to_homepage()"
 });
 formatter.result({
-  "duration": 1862713200,
+  "duration": 2263039500,
   "status": "passed"
 });
 formatter.match({
@@ -62,26 +62,81 @@ formatter.match({
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 782512700,
+  "duration": 674774801,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.clickLoginButton()"
 });
 formatter.result({
-  "duration": 2620194500,
+  "duration": 91743750099,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.nav_homePage()"
 });
 formatter.result({
-  "duration": 34474900,
+  "duration": 16649500,
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded1.png");
 formatter.write("Browser is closed");
 formatter.after({
-  "duration": 796443801,
+  "duration": 1036301801,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 45700,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 11,
+  "name": "Check Login Functionality with invalid Credentials",
+  "description": "",
+  "id": "test-login-functionality;check-login-functionality-with-invalid-credentials",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 12,
+  "name": "User will be open browser and launch Application",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 13,
+  "name": "User will be click on My Account tab and click on Login",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "Click on Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "loginSteps.launchBrowser()"
+});
+formatter.result({
+  "duration": 4436604600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginSteps.nav_to_homepage()"
+});
+formatter.result({
+  "duration": 1525499599,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginSteps.clickLoginButton()"
+});
+formatter.result({
+  "duration": 1562856900,
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded2.png");
+formatter.write("Browser is closed");
+formatter.after({
+  "duration": 1031379301,
   "status": "passed"
 });
 });

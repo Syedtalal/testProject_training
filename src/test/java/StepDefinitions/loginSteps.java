@@ -21,8 +21,9 @@ public class loginSteps {
 
         @After
         public void cleanup(){
-
-
+            TakesScreenshot scrnshot = (TakesScreenshot)driver;
+            byte[] data = scrnshot.getScreenshotAs(OutputType.BYTES);
+            scn.embed(data, "image/png");
             driver.quit();
             scn.write("Browser is closed");
         }
