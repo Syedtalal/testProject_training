@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 88000,
+  "duration": 78800,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,46 +47,46 @@ formatter.match({
   "location": "loginSteps.launchBrowser()"
 });
 formatter.result({
-  "duration": 9531401600,
+  "duration": 10242719600,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.nav_to_homepage()"
 });
 formatter.result({
-  "duration": 2263039500,
+  "duration": 1337802800,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.userNameAndPassword()"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 674774801,
+  "duration": 232496100,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.clickLoginButton()"
 });
 formatter.result({
-  "duration": 91743750099,
+  "duration": 1700416500,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.nav_homePage()"
 });
 formatter.result({
-  "duration": 16649500,
-  "status": "passed"
+  "duration": 20936500,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Account Login]\u003e but was:\u003c[My Account]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat pageFactory.login_Page.getTitle(login_Page.java:54)\r\n\tat StepDefinitions.loginSteps.nav_homePage(loginSteps.java:74)\r\n\tat ✽.Then Verify user is Navigate to the Your Store(Login.feature:9)\r\n",
+  "status": "failed"
 });
-formatter.embedding("image/png", "embedded1.png");
+formatter.embedding("image/png", "embedded0.png");
 formatter.write("Browser is closed");
 formatter.after({
-  "duration": 1036301801,
+  "duration": 1058326900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 45700,
+  "duration": 108000,
   "status": "passed"
 });
 formatter.scenario({
@@ -116,27 +116,26 @@ formatter.match({
   "location": "loginSteps.launchBrowser()"
 });
 formatter.result({
-  "duration": 4436604600,
+  "duration": 5808620901,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.nav_to_homepage()"
 });
 formatter.result({
-  "duration": 1525499599,
+  "duration": 1277918101,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.clickLoginButton()"
 });
 formatter.result({
-  "duration": 1562856900,
+  "duration": 1669738801,
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded2.png");
 formatter.write("Browser is closed");
 formatter.after({
-  "duration": 1031379301,
+  "duration": 736026501,
   "status": "passed"
 });
 });

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="113.822391">
-<testcase classname="Test Login functionality" name="Check Login Functionality with valid Credentials" time="105.266005">
-<system-out><![CDATA[Given User will be open browser and launch Application......................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="24.085189">
+<testcase classname="Test Login functionality" name="Check Login Functionality with valid Credentials" time="14.592777">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[Account Login]&gt; but was:&lt;[My Account]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at pageFactory.login_Page.getTitle(login_Page.java:54)&#13;&#10;&#9;at StepDefinitions.loginSteps.nav_homePage(loginSteps.java:74)&#13;&#10;&#9;at ✽.Then Verify user is Navigate to the Your Store(Login.feature:9)&#13;&#10;"><![CDATA[Given User will be open browser and launch Application......................passed
 When User will be click on My Account tab and click on Login................passed
 Then User will be enter ID and Password.....................................passed
 And Click on Login Button...................................................passed
-Then Verify user is Navigate to the Your Store..............................passed
-]]></system-out>
+Then Verify user is Navigate to the Your Store..............................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Account Login]> but was:<[My Account]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at pageFactory.login_Page.getTitle(login_Page.java:54)
+	at StepDefinitions.loginSteps.nav_homePage(loginSteps.java:74)
+	at ✽.Then Verify user is Navigate to the Your Store(Login.feature:9)
+]]></failure>
 </testcase>
-<testcase classname="Test Login functionality" name="Check Login Functionality with invalid Credentials" time="8.556386">
+<testcase classname="Test Login functionality" name="Check Login Functionality with invalid Credentials" time="9.492412">
 <system-out><![CDATA[Given User will be open browser and launch Application......................passed
 When User will be click on My Account tab and click on Login................passed
 And Click on Login Button...................................................passed

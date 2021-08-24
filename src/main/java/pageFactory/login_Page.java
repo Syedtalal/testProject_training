@@ -41,9 +41,9 @@ public class login_Page {
         public void email_and_password(String email, String password){
             input_email.sendKeys(email);
             input_password.sendKeys(password);
-            TakesScreenshot scrnshot = (TakesScreenshot)driver;
-            byte[] data = scrnshot.getScreenshotAs(OutputType.BYTES);
-            scn.embed(data, "image/png");
+//            TakesScreenshot scrnshot = (TakesScreenshot)driver;
+//            byte[] data = scrnshot.getScreenshotAs(OutputType.BYTES);
+//            scn.embed(data, "image/png");
         }
         public void click_on_login_button(){
             login_btn.click();
@@ -54,6 +54,5 @@ public class login_Page {
             Assert.assertEquals(expected_Title,actual_Title);
 
         }
-
 
 }
