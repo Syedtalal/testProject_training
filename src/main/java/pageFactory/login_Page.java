@@ -1,12 +1,16 @@
 package pageFactory;
 
+import cucumber.api.Scenario;
 import org.junit.Assert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class login_Page {
+        Scenario scn;
 
         @FindBy(xpath = "//li[@class=\"dropdown\"]/a[@class=\"dropdown-toggle\"]/i")
         WebElement my_Account;
@@ -25,7 +29,8 @@ public class login_Page {
 
         private WebDriver driver;
 
-        public login_Page(WebDriver driver){
+        public login_Page(WebDriver driver,Scenario s){
+            this.scn = s;
             this.driver=driver;
             PageFactory.initElements(driver,this);
         }
@@ -36,6 +41,9 @@ public class login_Page {
         public void email_and_password(String email, String password){
             input_email.sendKeys(email);
             input_password.sendKeys(password);
+            TakesScreenshot scrnshot = (TakesScreenshot)driver;
+            byte[] data = scrnshot.getScreenshotAs(OutputType.BYTES);
+            scn.embed(data, "image/png");
         }
         public void click_on_login_button(){
             login_btn.click();
@@ -46,4 +54,6 @@ public class login_Page {
             Assert.assertEquals(expected_Title,actual_Title);
 
         }
+
+
 }
