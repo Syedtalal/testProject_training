@@ -61,6 +61,13 @@ public class loginSteps {
             System.out.println("User Enter ID and Password Successfully");
         }
 
+        @Then("^User will be enter invalid ID and Password$")
+        public void invalid_userNameAndPassword(){
+        login_Page login = new login_Page(driver,scn);
+        login.email_and_password("syedtalal","123");
+        System.out.println("User Enter inavlid ID and Password");
+    }
+
         @And("^Click on Login Button$")
         public void clickLoginButton(){
             login_Page login = new login_Page(driver,scn);
